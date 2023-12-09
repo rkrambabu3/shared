@@ -1,11 +1,3 @@
-pipeline{
-  agent any
-  stages{
-    stage("Demo"){
-      steps{
-        echo "Wecleom to the Jenkins Shared library"
-      }
-    }
-  }
+def call(name){
+  echo "Hi ${name}, Good evening ..."
 }
-
